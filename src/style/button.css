@@ -1,0 +1,15 @@
+.button {
+  padding: 0px;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-add {
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  background: #6666ff;
+  cursor: pointer;
+}
