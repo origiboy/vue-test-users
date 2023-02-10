@@ -47,8 +47,9 @@
             <span class="invalid-feedback" :class="chiefField">Это обязательное поле</span>
           </div>
         </label>
+
         <div>
-          <button class="button button-add">Сохранить</button>
+          <Save />
         </div>
       </form>
     </div>
@@ -58,10 +59,12 @@
 <script>
 import { required } from 'vuelidate/lib/validators'
 
-export default {
-  name: 'Popup',
-  components: {
+import Save from '../Buttons/Add.vue'
 
+export default {
+  name: 'Form',
+  components: {
+    Save,
   },
   data () {
     return {

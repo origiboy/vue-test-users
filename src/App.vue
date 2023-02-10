@@ -16,9 +16,9 @@ import './style/app.css'
 import './style/button.css'
 import './style/popup.css'
 
-import ButtonAdd from './components/ButtonAdd.vue'
-import Users from './components/Users.vue'
-import Popup from './components/Popup.vue'
+import ButtonAdd from './components/Buttons/Add.vue'
+import Users from './components/Table/Users.vue'
+import Popup from './components/Popup/Form.vue'
 
 export default {
   name: 'App',

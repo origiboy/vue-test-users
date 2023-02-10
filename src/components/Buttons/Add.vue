@@ -5,6 +5,6 @@
 <script>
 
 export default {
-  name: 'ButtonAdd',
+  name: 'Add',
 }
 </script>
