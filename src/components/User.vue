@@ -10,13 +10,10 @@
 
 export default {
   name: 'User',
-  components: {
-
-  },
   props: ['user'],
   data () {
     return {
-      leftPadding: '10px'
+      leftPadding: '10px',
     }
   },
   computed: {
@@ -26,10 +23,10 @@ export default {
       } else {
         return 'bg-fafafa'
       }
-    }
+    },
   },
   mounted () {
     this.leftPadding = 'padding-left: ' + (10 + this.user.enclosure * 16 + 'px')
-  }
+  },
 }
 </script>

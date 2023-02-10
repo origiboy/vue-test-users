@@ -24,11 +24,11 @@ import User from './User.vue'
 export default {
   name: 'Users',
   components: {
-    User
+    User,
   },
   data () {
     return {
-      activeFilterName: this.$root.$data.state.settings.type
+      activeFilterName: this.$root.$data.state.settings.type,
     }
   },
   methods: {
@@ -39,14 +39,14 @@ export default {
         this.activeFilterName = 'asc'
       }
       this.$root.$data.setFilters('name', this.activeFilterName)
-    }
+    },
   },
   computed: {
     buttonRotate () {
       return {
-        'button-arrow-rotate': this.activeFilterName === 'desc'
+        'button-arrow-rotate': this.activeFilterName === 'desc',
       }
-    }
-  }
+    },
+  },
 }
 </script>

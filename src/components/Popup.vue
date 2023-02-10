@@ -68,13 +68,13 @@ export default {
       name: null,
       phoneNumber: null,
       chief: 'no-chief',
-      submitted: false
+      submitted: false,
     }
   },
   validations: {
     name: { required },
     phoneNumber: { required },
-    chief: { required }
+    chief: { required },
   },
   methods: {
     handleSubmit () {
@@ -92,24 +92,24 @@ export default {
         this.submitted = false
         this.$emit('handlerClick')
       }
-    }
+    },
   },
   computed: {
     nameField () {
       return {
-        'invalid-feedback_active': this.submitted && !this.$v.name.required
+        'invalid-feedback_active': this.submitted && !this.$v.name.required,
       }
     },
     phoneNumberField () {
       return {
-        'invalid-feedback_active': this.submitted && !this.$v.phoneNumber.required
+        'invalid-feedback_active': this.submitted && !this.$v.phoneNumber.required,
       }
     },
     chiefField () {
       return {
-        'invalid-feedback_active': this.submitted && !this.$v.chief.required
+        'invalid-feedback_active': this.submitted && !this.$v.chief.required,
       }
-    }
+    },
   },
   watch: {
     phoneNumber (newNum, oldNum) {
@@ -118,8 +118,8 @@ export default {
           this.phoneNumber = oldNum
         }
       }
-    }
-  }
+    },
+  },
 }
 
 </script>

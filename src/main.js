@@ -12,7 +12,7 @@ new Vue({
   el: '#app',
   components: { App },
   template: '<App/>',
-  data: store
+  data: store,
 })
 
 Vue.use(Vuelidate)

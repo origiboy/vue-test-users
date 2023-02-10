@@ -6,8 +6,5 @@
 
 export default {
   name: 'ButtonAdd',
-  components: {
-
-  }
 }
 </script>

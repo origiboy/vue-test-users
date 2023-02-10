@@ -25,15 +25,15 @@ export default {
   components: {
     ButtonAdd,
     Users,
-    Popup
+    Popup,
   },
   data () {
     return {
-      popupOpen: false
+      popupOpen: false,
     }
   },
   beforeMount () {
     this.$root.$data.getDataFromLocalStorage()
-  }
+  },
 }
 </script>

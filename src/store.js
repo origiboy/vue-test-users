@@ -3,8 +3,8 @@ export const store = {
     users: [],
     settings: {
       filter: 'id',
-      type: 'asc'
-    }
+      type: 'asc',
+    },
   },
   usersGrouped (usersToGroup = [...this.state.users]) {
     let newUsers = []
@@ -96,5 +96,5 @@ export const store = {
       this.state.settings.type = JSON.parse(localStorage.getItem('app-data-settings')).type || 'asc'
     }
     this.setFilters(this.state.settings.filter, this.state.settings.type)
-  }
+  },
 }
