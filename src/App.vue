@@ -1,9 +1,14 @@
 <template>
   <div class="container">
     <div class="flex header">
-      <ButtonAdd  @handlerClick="popupOpen = true" />
+      <ButtonAdd
+        @handlerClick="popupOpen = true"
+      />
 
-      <Popup v-if="popupOpen" @handlerClick="popupOpen = false" />
+      <Popup
+        v-if="popupOpen"
+        @handlerClick="popupOpen = false"
+      />
     </div>
 
     <Users />

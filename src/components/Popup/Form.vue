@@ -4,7 +4,8 @@
       <div class="flex popup__header">
         <h2>Добавление пользователя</h2>
         <button class="popup__close"
-        @click="$emit('handlerClick')">
+          @click="$emit('handlerClick')"
+        >
           <svg width="100%" height="100%" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="2.09082" width="29.5699" height="2.95699" transform="rotate(45 2.09082 0)" fill="#333333"/>
             <rect y="20.9092" width="29.5699" height="2.95699" transform="rotate(-45 0 20.9092)" fill="#333333"/>
@@ -12,14 +13,19 @@
         </button>
       </div>
 
-      <form action="" class="flex popup__form" @submit.prevent="handleSubmit">
+      <form action="" class="flex popup__form"
+        @submit.prevent="handleSubmit"
+      >
         <label class="flex">
           <span class="popup__field-name">Имя</span>
           <div class="flex popup__field">
             <input type="text" name="" id=""
-            v-model="name">
-            <span class="invalid-feedback"
-            :class="nameField">Это обязательное поле</span>
+              v-model="name">
+              <span class="invalid-feedback"
+              :class="nameField"
+            >
+              Это обязательное поле
+            </span>
           </div>
         </label>
 
@@ -27,9 +33,12 @@
           <span class="popup__field-name">Телефон</span>
           <div class="flex popup__field">
             <input type="text" name="" id=""
-            v-model="phoneNumber">
-            <span class="invalid-feedback"
-            :class="phoneNumberField">Это обязательное поле</span>
+              v-model="phoneNumber">
+              <span class="invalid-feedback"
+              :class="phoneNumberField"
+            >
+              Это обязательное поле
+            </span>
           </div>
         </label>
 
@@ -37,14 +46,21 @@
           <span class="popup__field-name">Начальник</span>
           <div class="flex popup__field">
             <select name="chief" id=""
-            v-model="chief">
-              <option value="no-chief" selected="selected">Без начальника</option>
-              <option
-              v-for="value in $root.$data.state.users"
-              :value="value.id"
-              :key="value.id">{{ value.name }}</option>
+              v-model="chief">
+                <option value="no-chief" selected="selected">Без начальника</option>
+                <option
+                  v-for="value in $root.$data.state.users"
+                  :value="value.id"
+                  :key="value.id"
+                >
+                  {{ value.name }}
+                </option>
             </select>
-            <span class="invalid-feedback" :class="chiefField">Это обязательное поле</span>
+            <span class="invalid-feedback"
+              :class="chiefField"
+            >
+              Это обязательное поле
+            </span>
           </div>
         </label>
 

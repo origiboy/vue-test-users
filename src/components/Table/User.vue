@@ -1,8 +1,17 @@
 <template>
-  <div class="flex table__line" :class="backgroundColors" :key="user.id">
-    <div class="table__ceil" :style="leftPadding">{{ user.name }}</div>
+  <div class="flex table__line"
+    :class="backgroundColors"
+    :key="user.id"
+  >
+    <div class="table__ceil"
+      :style="leftPadding"
+    >
+      {{ user.name }}
+    </div>
 
-    <div class="table__ceil">{{ user.phoneNumber }}</div>
+    <div class="table__ceil">
+      {{ user.phoneNumber }}
+    </div>
   </div>
 </template>
 

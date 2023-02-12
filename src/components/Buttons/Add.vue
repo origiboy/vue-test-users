@@ -1,5 +1,9 @@
 <template>
-  <button class="button button-add" @click="$emit('handlerClick')">Добавить</button>
+  <button class="button button-add"
+    @click="$emit('handlerClick')"
+  >
+    Добавить
+  </button>
 </template>
 
 <script>
